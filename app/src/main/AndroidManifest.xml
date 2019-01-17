@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.waditra.app"
+    android:versionCode="1"
+    android:versionName="1.2.3">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:maxSdkVersion="23"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_PROFILE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="E-Office WRC"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Register"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Fragment.ListKaryawan"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ListPegawai"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".HomeDrawer.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Profil"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".EditProfile"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ProfilKaryawan"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AddPhotos"
+            android:screenOrientation="portrait"
+            android:launchMode="standard"/>
+        <activity android:name=".Koneksi"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ListSPJ"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ListUser"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DetailUser"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".DetailSPJ"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Tentang"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".FcmInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Notifikasi" android:screenOrientation="portrait"/>
+        <activity android:name=".ListNotifikasi" android:screenOrientation="portrait"/>
+        <activity android:name=".ListProduk" android:screenOrientation="portrait"/>
+        <activity android:name=".ListPortofolio" android:screenOrientation="portrait"/>
+        <activity android:name=".ListProjek" android:screenOrientation="portrait"/>
+        <activity android:name=".List_Pegawai" android:screenOrientation="portrait"/>
+        <activity android:name=".DetailPortofolio" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

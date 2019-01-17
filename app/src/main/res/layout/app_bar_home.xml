@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.waditra.app.HomeDrawer.Home"
+    android:id="@+id/CL"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:background="@color/fb">
+
+            <ImageButton
+                android:layout_width="90px"
+                android:layout_height="50dp"
+                android:id="@+id/mail_btn"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:onClick="onEmail"
+                android:src="@drawable/ic_mail_white_24dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone" />
+            <ImageButton
+                android:layout_width="90px"
+                android:layout_height="50dp"
+                android:id="@+id/call_btn"
+                android:layout_gravity="right|top"
+                android:background="@android:color/transparent"
+                android:singleLine="true"
+                android:onClick="onCall"
+                android:src="@drawable/ic_phone_white_24dp"
+                android:paddingBottom="5dp"
+                android:visibility="gone" />
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:id="@+id/lihatUser"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:gravity="right"
+                android:src="@drawable/ic_supervisor_account_white_24dp"
+                android:onClick="lihatUser"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+</android.support.design.widget.CoordinatorLayout>

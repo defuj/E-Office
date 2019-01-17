@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.waditra.app.ProfilKaryawan">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/untukProgress"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/fb"
+            android:gravity="center_vertical"
+            android:backgroundTint="@color/fb">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton7"
+                android:background="@color/fb"
+                android:textColor="#fff"
+                android:onClick="onBack2"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:backgroundTint="@color/fb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="DETAIL PEGAWAI"
+                android:id="@+id/textView8"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/untukContent"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ContentDetailKaryawan">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/imageView14"
+                                android:background="@drawable/karyawan"
+                                android:backgroundTint="#FFDE430B"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:visibility="gone" />
+
+                            <WebView
+                                android:layout_width="80dp"
+                                android:layout_height="165dp"
+                                android:id="@+id/fotoProfilKaryawan"
+                                android:layout_weight="0.17" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="30dp"
+                            android:paddingTop="30dp"
+                            android:paddingRight="30dp"
+                            android:paddingBottom="10dp" >
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp" >
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nama lengkap"
+                                    android:id="@+id/textView9"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:id="@+id/textView10"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Value"
+                                    android:id="@+id/txtNamaDetalKaryawan"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp" >
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kedudukan"
+                                    android:id="@+id/textView12"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:id="@+id/textView13"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Value"
+                                    android:id="@+id/txtKedudukanDetail"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp" >
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="TTL"
+                                    android:id="@+id/textView42"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:id="@+id/textView43"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Value"
+                                    android:id="@+id/txtTTLDetail"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp" >
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Masuk"
+                                    android:id="@+id/txtMasuk"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="15dp"
+                                    android:layout_height="wrap_content"
+                                    android:text=":"
+                                    android:id="@+id/textView47"
+                                    android:textSize="13dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Value"
+                                    android:id="@+id/txtWaktuMasuk"
+                                    android:textSize="13dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom|center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:id="@+id/imageView20"
+                            android:background="@drawable/logo_320px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

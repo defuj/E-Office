@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="portofolio">Portofolio</string>
+    <string name="profil">Profil</string>
+    <string name="beranda">Beranda</string>
+    <string name="title_activity_list_karyawan">Karyawan</string>
+    <string name="visi_misi"><![CDATA[Visi & Misi]]></string>
+    <string name="goweb">Website</string>
+
+    <string name="FCM_PREF">com.waditra.app.fcm_pref</string>
+    <string name="FCM_TOKEN">com.waditra.app.fcm_token</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.waditra.app.ListNotifikasi">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/fb"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:backgroundTint="@color/fb">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton15"
+                android:background="@color/fb"
+                android:textColor="#fff"
+                android:onClick="onBack4"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:backgroundTint="@color/fb" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PEMBERITAHUAN"
+                android:id="@+id/textView85"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom|right"
+        android:visibility="gone">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton16"
+            android:background="@drawable/design_fab_background"
+            android:textColor="#fff"
+            android:onClick="onDelete"
+            android:src="@drawable/ic_delete_white_24dp"
+            android:backgroundTint="#df4209"
+            android:padding="15dp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <com.twotoasters.jazzylistview.JazzyListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listNotifikasi"
+        android:focusable="true"
+        android:divider="@null"
+        app:effect="cards"
+        app:only_animate_new_items="false"
+        app:only_animate_fling="false"
+        app:max_velocity="0"
+        android:choiceMode="singleChoice"
+        android:layout_marginTop="53dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="gone" />
+</RelativeLayout>

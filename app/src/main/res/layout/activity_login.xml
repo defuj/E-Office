@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.waditra.app.Login"
+    android:background="@drawable/bg_apps"
+    android:gravity="center_vertical">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/email_login_form"
+        android:focusable="false">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="68dp"
+                android:layout_height="66dp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="center_vertical|center_horizontal">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/logo_app"
+                    android:background="@drawable/applogo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="-80dp">
+
+            <LinearLayout
+                android:id="@+id/bawah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal"
+                android:focusable="false"
+                android:background="@android:color/transparent"
+                android:layout_margin="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingBottom="30dp"
+                android:paddingTop="40dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="E-Office Waditra"
+                            android:id="@+id/textView84"
+                            android:textSize="15dp"
+                            android:textColor="#fff"
+                            android:layout_marginBottom="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/editTextUsername"
+                            android:background="@drawable/abc_list_selector_background_transition_holo_dark"
+                            android:hint="Nama Pengguna"
+                            android:padding="15dp"
+                            android:textSize="13dp"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:backgroundTint="#000"
+                            android:typeface="sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:ems="10"
+                            android:id="@+id/editTextPassword"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/abc_list_selector_background_transition_holo_dark"
+                            android:padding="15dp"
+                            android:textSize="13dp"
+                            android:textColorHint="#fff"
+                            android:textColor="#fff"
+                            android:hint="Kata Sandi"
+                            android:imeActionId="@+id/buttonLogin"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:backgroundTint="#000"
+                            android:typeface="sans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/buttonLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Masuk"
+                            android:textStyle="bold"
+                            android:singleLine="true"
+                            android:textSize="14dp"
+                            android:background="#5ac8fa"
+                            android:textColor="#FFF"
+                            android:layout_marginTop="8dp"
+                            android:onClick="onLogin"
+                            android:typeface="sans"
+                            android:backgroundTint="@color/fb" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:gravity="bottom"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Buat Akun"
+                                android:id="@+id/buttonRegister"
+                                android:background="#4cd964"
+                                android:singleLine="true"
+                                android:textColor="#fff"
+                                android:textStyle="bold"
+                                android:typeface="sans" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

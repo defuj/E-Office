@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.waditra.app.ListUser"
+    android:id="@+id/swipe">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/fb"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:backgroundTint="@color/fb">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton11"
+                android:background="@color/fb"
+                android:textColor="#fff"
+                android:onClick="onBack4"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:backgroundTint="@color/fb" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:id="@+id/button4"
+                android:singleLine="true"
+                android:backgroundTint="#fff"
+                android:layout_marginRight="-35dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/cariUser"
+                android:hint="Cari"
+                android:paddingLeft="35dp"
+                android:textColor="#fff"
+                android:textColorHighlight="#fff"
+                android:textColorHint="#fff"
+                android:textColorLink="#fff"
+                android:backgroundTint="#fff"
+                android:lines="1"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listPengguna"
+        android:focusable="true"
+        android:choiceMode="singleChoice"
+        android:layout_marginTop="53dp" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressListUser"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.waditra.app.Fragment.ListKaryawan"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/karyawan">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/fb"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="55dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton"
+                android:background="@color/fb"
+                android:textColor="#fff"
+                android:onClick="onBack4"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PEGAWAI"
+                android:id="@+id/textView102"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:visibility="gone" />
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_cari_blue"
+                android:layout_marginRight="-35dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/txtCariKaryawan"
+                    android:hint="Cari"
+                    android:paddingLeft="35dp"
+                    android:textColor="#fff"
+                    android:textColorHighlight="#fff"
+                    android:textColorHint="#fff"
+                    android:textColorLink="#fff"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:textSize="16dp"
+                    android:paddingTop="6dp"
+                    android:background="@null">
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:background="#fff"
+                    android:layout_marginTop="-5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.twotoasters.jazzylistview.JazzyListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listView"
+        android:layout_marginTop="53dp"
+        android:divider="@null"
+        app:effect="cards"
+        app:only_animate_new_items="false"
+        app:only_animate_fling="false"
+        app:max_velocity="0"
+        android:focusable="true" />
+    <!--app:effect="Tilt"
+        app:effect="Fade"
+        app:effect="Grow"
+        app:effect="fan"
+        app:effect="Curl"
+        app:effect="Helix"
+        app:effect="Flip"
+        app:effect="Wave"
+        app:effect="Fly"-->
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progresListKaryawan"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="gone" />
+
+</RelativeLayout>

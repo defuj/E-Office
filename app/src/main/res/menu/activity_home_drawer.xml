@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_pegawai"
+            android:icon="@drawable/ic_assignment_ind_white_24dp"
+            android:title="Pegawai">
+        </item>
+
+        <item
+            android:id="@+id/nav_spj"
+            android:icon="@drawable/ic_card_travel_white_24dp"
+            android:title="SPJ">
+        </item>
+
+        <item
+            android:id="@+id/nav_portofolio"
+            android:title="Portofolio"
+            android:icon="@drawable/ic_event_note_white_24dp">
+        </item>
+
+        <item
+            android:id="@+id/nav_projek"
+            android:icon="@drawable/ic_devices_other_white_24dp"
+            android:title="Proyek">
+        </item>
+
+        <item
+            android:id="@+id/nav_produk"
+            android:icon="@drawable/ic_phone_android_white_24dp"
+            android:title="Produk">
+        </item>
+
+        <item
+            android:id="@+id/nav_tentang"
+            android:title="Tentang Aplikasi"
+            android:checked="false"
+            android:icon="@drawable/ic_supervisor_account_white_24dp">
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_goweb"
+            android:icon="@drawable/ic_public_white_18dp"
+            android:title="@string/goweb">
+        </item>
+
+        <item
+            android:id="@+id/nav_keluar"
+            android:title="Keluar"
+            android:checked="false"
+            android:icon="@drawable/ic_power_settings_new_white_18dp">
+        </item>
+    </group>
+
+</menu>

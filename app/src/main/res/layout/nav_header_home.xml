@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@color/fb"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.05"
+        android:clickable="false"
+        android:id="@+id/layoutClik">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/imgFotoProfil"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:background="@drawable/design_fab_background"
+                android:layout_gravity="center"
+                app:placeholderImage="@drawable/client"
+                app:roundAsCircle="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:text="Android Studio"
+                android:id="@+id/txtNamaUser"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="-20dp"
+                android:typeface="normal"
+                android:elegantTextHeight="false"
+                android:textAllCaps="true"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/txtEmailUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="android.studio@android.com"
+                android:typeface="normal"
+                android:elegantTextHeight="false"
+                android:textAllCaps="true"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical|right"
+            android:layout_weight="0.50"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT PROFILE"
+                android:id="@+id/textEditProfile"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="5dp"
+                android:typeface="normal"
+                android:onClick="goEditProfile"
+                android:textSize="10dp" />
+
+            <ImageButton
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:id="@+id/imgEditProfil"
+                android:background="@drawable/ic_settings_white_24dp"
+                android:backgroundTint="#f9f9f9" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/goProfile"
+            android:layout_marginTop="-170dp"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:onClick="pergiKeProfile" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/bg_nav_bar"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView19"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:background="@drawable/design_fab_background"
+                    android:layout_gravity="center"
+                    android:onClick="goProfilWithImage"
+                    android:backgroundTint="#f9f9f9"
+                    android:src="@drawable/client" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="Android Studio"
+                    android:id="@+id/textView81"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    android:layout_marginTop="-20dp"
+                    android:typeface="normal"
+                    android:elegantTextHeight="false"
+                    android:textAllCaps="true"
+                    android:onClick="goProfilWithName" />
+
+                <TextView
+                    android:id="@+id/textView82"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="android.studio@android.com"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    android:elegantTextHeight="false"
+                    android:textAllCaps="true"
+                    android:textSize="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom|right" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EDIT PROFILE"
+                android:id="@+id/textView83"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="5dp"
+                android:typeface="normal"
+                android:onClick="goEditProfile"
+                android:textSize="14dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton14"
+                android:background="@drawable/ic_settings_white_24dp"
+                android:backgroundTint="#f9f9f9" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

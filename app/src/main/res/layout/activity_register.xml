@@ -1,0 +1,258 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.waditra.app.Register"
+    android:background="@drawable/bg_apps"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="80dp"
+        android:layout_height="78dp"
+        android:padding="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center_horizontal"
+        android:backgroundTint="@android:color/transparent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="68dp"
+            android:layout_height="66dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:id="@+id/imageView22"
+                android:background="@drawable/applogo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="-80dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="1"
+            android:gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:paddingTop="40dp"
+            android:background="@android:color/transparent"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:backgroundTint="@android:color/transparent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Pendaftaran Akun"
+                    android:id="@+id/textView3"
+                    android:textColor="#fff"
+                    android:typeface="sans"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="13dp"
+                    android:focusable="true"
+                    android:textStyle="normal"
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/abc_list_selector_background_transition_holo_dark"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:typeface="sans"
+                    android:backgroundTint="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/nama_pengguna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Pengguna"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="13dp"
+                    android:focusable="true"
+                    android:textStyle="normal"
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/abc_list_selector_background_transition_holo_dark"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:typeface="sans"
+                    android:inputType="text"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/sandi1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Kata Sandi"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="13dp"
+                    android:focusable="true"
+                    android:textStyle="normal"
+                    android:enabled="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/abc_list_selector_background_transition_holo_dark"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:typeface="sans"
+                    android:backgroundTint="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/sandi2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Konfirmasi Sandi"
+                    android:imeActionId="@+id/buttonLogin"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="13dp"
+                    android:focusable="true"
+                    android:textStyle="normal"
+                    android:enabled="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/abc_list_selector_background_transition_holo_dark"
+                    android:padding="15dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:typeface="sans"
+                    android:backgroundTint="#000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Setuju dengan syarat &amp; kebijakan kami."
+                    android:id="@+id/cek_setuju"
+                    android:textColor="#fff"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#fff"
+                    android:textColorHighlight="#fff"
+                    android:textColorLink="#fff"
+                    android:buttonTint="#fff"
+                    android:backgroundTint="#fff"
+                    android:typeface="sans"
+                    app:buttonTint="#ffffff"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/buttonRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="MENDAFTAR"
+                        android:textStyle="bold"
+                        android:singleLine="true"
+                        android:textSize="14dp"
+                        android:background="#4cd964"
+                        android:textColor="#fff"
+                        android:layout_weight="0.36"
+                        android:onClick="onRegister"
+                        android:typeface="sans" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="80dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="-440dp"
+            android:padding="10dp"
+            android:background="@drawable/design_fab_background"
+            android:backgroundTint="#5ac8fa"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:id="@+id/imageView2"
+                android:background="@drawable/applogo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

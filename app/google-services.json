@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "9256411567",
+    "firebase_url": "https://e-office-waditra.firebaseio.com",
+    "project_id": "e-office-waditra",
+    "storage_bucket": "e-office-waditra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9256411567:android:b430ac661aa1525f",
+        "android_client_info": {
+          "package_name": "com.waditra.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9256411567-hge50p13q9u6i9hl3pon28gdk1c946ll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDc1tyqW8_53JQM4XAzIExgnXSEgWWR53g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

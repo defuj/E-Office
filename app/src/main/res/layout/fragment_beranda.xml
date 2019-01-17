@@ -1,0 +1,287 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.waditra.app.Fragment.Beranda"
+    android:id="@+id/fr_beranda"
+    android:layoutMode="clipBounds"
+    android:background="#e7e7e7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top|left|center_horizontal"
+        android:background="#f9f9f9">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.60">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:backgroundTint="#dddddd">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:paddingBottom="4dp"
+                    android:background="#5ac8fa">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/menu1"
+                        android:layout_weight="0.50"
+                        android:onClick="menu_satu"
+                        android:textColor="#5ac8fa"
+                        android:drawableTop="@drawable/btn_karyawan2"
+                        android:text="PEGAWAI"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:typeface="sans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:drawableTint="#5ac8fa"
+                        android:textSize="12dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:paddingBottom="4dp"
+                    android:background="#ffcc00">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/menu2"
+                        android:layout_weight="0.50"
+                        android:onClick="menu_dua"
+                        android:textColor="#ffcc00"
+                        android:paddingTop="20dp"
+                        android:drawableTop="@drawable/btn_spj2"
+                        android:text="SPJ"
+                        android:paddingBottom="20dp"
+                        android:typeface="sans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:drawableTint="#ffcc00"
+                        android:textSize="12dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:paddingBottom="4dp"
+                    android:background="#a600e7">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/menu3"
+                        android:layout_weight="0.50"
+                        android:onClick="menu_tiga"
+                        android:textColor="#a600e7"
+                        android:paddingTop="20dp"
+                        android:drawableTop="@drawable/ic_event_note2"
+                        android:text="PORTOFOLIO"
+                        android:paddingBottom="20dp"
+                        android:typeface="sans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:drawableTint="#a600e7"
+                        android:textSize="12dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="#007aff"
+                    android:paddingBottom="4dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/menu4"
+                        android:layout_weight="0.50"
+                        android:onClick="menu_empat"
+                        android:textColor="#007aff"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:drawableTop="@drawable/btn_projek3"
+                        android:text="PROJEK"
+                        android:typeface="sans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:drawableTint="#007aff"
+                        android:textSize="12dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="#4cd964"
+                    android:paddingBottom="4dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/menu5"
+                        android:layout_weight="0.50"
+                        android:onClick="menu_lima"
+                        android:textColor="#4cd964"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:drawableTop="@drawable/bg_produk2"
+                        android:text="PRODUK"
+                        android:typeface="sans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:drawableTint="#4cd964"
+                        android:textSize="12dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="#ff3b30"
+                    android:paddingBottom="4dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/menu6"
+                        android:layout_weight="0.50"
+                        android:onClick="menu_enam"
+                        android:textColor="#ff3b30"
+                        android:elegantTextHeight="false"
+                        android:paddingBottom="20dp"
+                        android:drawableTop="@drawable/btn_tentang_src2"
+                        android:text="TENTANG"
+                        android:typeface="sans"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingTop="20dp"
+                        android:drawableTint="#ff3b30"
+                        android:textSize="12dp"
+                        android:background="#eeeeee" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.50">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="30dp"
+                android:layout_marginBottom="35dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnShowNotif"
+                    android:src="@drawable/noti_kk"
+                    android:padding="20dp"
+                    android:onClick="notif_clik"
+                    android:background="@drawable/bulat_biru"
+                    android:nestedScrollingEnabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="0 Notif"
+                    android:id="@+id/txtJumlahNotif"
+                    android:background="@drawable/rounded_orange"
+                    android:padding="5dp"
+                    android:textColor="#fff"
+                    android:textSize="10dp"
+                    android:layout_marginTop="-20dp"
+                    android:layout_marginRight="-20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="E-Office Waditra "
+            android:id="@+id/textView16"
+            android:textSize="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:background="#ff9500"
+            android:id="@+id/konektivitas"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView24"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/applogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tidak ada konektivitas"
+                android:id="@+id/textView95"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textSize="17dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

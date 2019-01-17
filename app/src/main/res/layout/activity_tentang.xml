@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.waditra.app.Tentang">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/fb"
+            android:backgroundTint="@color/fb">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageButton8"
+                android:background="@color/fb"
+                android:textColor="#fff"
+                android:onClick="onBack3"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:backgroundTint="@color/fb" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:backgroundTint="@color/fb">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Tentang E-Office"
+                    android:id="@+id/BagianJudul"
+                    android:textSize="20dp"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="55dp"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView2">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ContentTentang">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp" >
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="70dp"
+                                android:id="@+id/imageView17"
+                                android:src="@drawable/wrc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView52"
+                                android:textSize="14dp"
+                                android:text="     PT Waditra Reka Cipta Bandung (WADITRA) adalah perusahaan penyedia solusi teknologi informasi yang mengkhususkan pada pengembangan perangkat lunak serta implementasi dan tata kelola sistem informasi/teknologi informasi. Melalui kombinasi keahlian dan pemahaman yang mendalam terhadap proses bisnis di industri dan penguasaan teknologi yang terbaharui, WADITRA membantu pelanggan dalam menentukan dan memanfaatkan solusi-solusi berbasis teknologi informasi guna mencapai tujuan bisnisnya secara efektif dan efisien."
+                                android:gravity="fill_horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="     WADITRA didedikasikan pada upaya membuktikan janji yang ditawarkan dari penerapan teknologi informasi terhadap proses bisnis pada organisasi. Komitmen WADITRA adalah menjadi mitra terpercaya bagi pelanggan dan membantu dalam upaya mencapai target bisnisnya melalui penyediaan solusi dan tata kelola teknologi informasi."
+                                android:id="@+id/textView55"
+                                android:textSize="14dp"
+                                android:gravity="fill_horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="     Dengan dukungan sumber daya manusia yang kompeten di bidangnya dan metodologi layanan yang dikembangkan secara baik dan teruji, memungkinkan WADITRA dapat memberikan layanan bernilai tinggi bagi pelanggan."
+                                android:id="@+id/textView57"
+                                android:textSize="14dp"
+                                android:gravity="fill_horizontal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ContentVisi"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp" >
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="70dp"
+                                android:id="@+id/imageView16"
+                                android:src="@drawable/wrc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:layout_marginBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView63"
+                                android:textSize="16dp"
+                                android:text="VISI"
+                                android:gravity="fill_horizontal"
+                                android:layout_marginBottom="5dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView49"
+                                android:textSize="14dp"
+                                android:text="Delivering IT Solutions · Globally"
+                                android:gravity="fill_horizontal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="MISI"
+                                android:id="@+id/textView58"
+                                android:textSize="16dp"
+                                android:gravity="fill_horizontal"
+                                android:textStyle="bold"
+                                android:layout_marginBottom="5dp" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1."
+                                    android:id="@+id/textView69"
+                                    android:layout_marginRight="2dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView59"
+                                    android:textSize="14dp"
+                                    android:text="Menyejahterakan semua pemegang saham, karyawan dan keluarganya."
+                                    android:gravity="fill_horizontal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2."
+                                    android:id="@+id/textView70"
+                                    android:layout_marginRight="2dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView64"
+                                    android:textSize="14dp"
+                                    android:text="Memuaskan pelanggan dengan hasil pekerjaan yang berkualitas dan termanfaatkan."
+                                    android:gravity="fill_horizontal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3."
+                                    android:id="@+id/textView71"
+                                    android:layout_marginRight="2dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView65"
+                                    android:textSize="14dp"
+                                    android:text="Menjalankan bisnis sebagai manifestasi ibadah."
+                                    android:gravity="fill_horizontal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4."
+                                    android:id="@+id/textView72"
+                                    android:layout_marginRight="2dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView66"
+                                    android:textSize="14dp"
+                                    android:text="Memperbaharui kompetensi sumber daya manusia, proses, dan teknologi secara konsisten guna meningkatkan unjuk kerja perusahaan."
+                                    android:gravity="fill_horizontal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5."
+                                    android:id="@+id/textView73"
+                                    android:layout_marginRight="2dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView67"
+                                    android:textSize="14dp"
+                                    android:text="Mengembangkan bisnis berskala global dengan tetap berkontribusi kepada masyarakat dan lingkungan sekitar."
+                                    android:gravity="fill_horizontal" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="6."
+                                    android:id="@+id/textView74"
+                                    android:layout_marginRight="2dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/textView68"
+                                    android:textSize="14dp"
+                                    android:text="Menguatkan pondasi perusahaan agar bisa eksis sampai akhir jaman."
+                                    android:gravity="fill_horizontal" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ContentSDM"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:padding="10dp" >
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="70dp"
+                                android:id="@+id/imageView18"
+                                android:src="@drawable/wrc" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView60"
+                                android:textSize="15dp"
+                                android:text="Kompetensi di berbagai bidang keahlian teknis"
+                                android:gravity="fill_horizontal"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Konsentrasi bisnis kami adalah penyediaan solusi IT. Kami telah menyelesaikan berbagai proyek dari perencanaan IT sampai implementasi teknis dan dukungan yang berkelanjutan. Dengan bermitra bersama WADITRA, Anda dapat dengan segera mendapatkan sentuhan keahlian dan pengalaman yang tertuang dalam standar proses dan orang-orang kami."
+                                    android:id="@+id/textView75"
+                                    android:textSize="14dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Respon yang cepat"
+                                android:id="@+id/textView61"
+                                android:textSize="15dp"
+                                android:gravity="fill_horizontal"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Di era kompetisi pasar yang sangat ketat seperti saat ini, profitabilitas dan produktivitas menjadi kunci untuk tetap bertahan sukses. Kami memahami sepenuhnya akan hal ini. Maka, segera setelah terjadi kesepakatan pada sebuah proyek, tim proyek inti segera terbentuk dan langsung bekerja sehingga mereduksi secara signifikan lamanya waktu pengerjaan. Kemudian selama proyek berlangsung, sentra sumber daya kami menyediakan keahlian tambahan yang diperlukan untuk menyelesaikan proyek."
+                                    android:id="@+id/textView76"
+                                    android:textSize="14dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sentra SDM berkualifikasi tinggi"
+                                android:id="@+id/textView62"
+                                android:textSize="15dp"
+                                android:gravity="fill_horizontal"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kompetensi sumber daya manusia yang unggul pada sentra solusi kami menjamin perusahaan pelanggan memperoleh layanan dari software engineer, database specialist, system engineer berbakat dan dikelola oleh project manager."
+                                    android:id="@+id/textView77"
+                                    android:textSize="14dp"
+                                    android:layout_marginLeft="6dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="10dp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:id="@+id/imageButton18"
+                android:background="@drawable/applogo"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Versi 1.2.2 BETA 1"
+                android:id="@+id/textView88"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dikembangkan oleh dede fuji abdul"
+                android:id="@+id/textView89" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peserta Praktik Kerja Lapangan 2016"
+                android:id="@+id/textView91" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PT.Waditra Reka Cipta Bandung"
+                android:id="@+id/textView92" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#F15A23"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="VISI &amp; MISI"
+                android:id="@+id/visi"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:background="#f66631"
+                android:layout_weight="0.50"
+                android:layout_marginRight="2dp"
+                android:onClick="visi" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tentang"
+                android:id="@+id/tentang"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:background="#FFDE430B"
+                android:layout_weight="0.50"
+                android:onClick="tentang" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="KEUNGGULAN"
+                android:id="@+id/sdm"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:background="#f66631"
+                android:layout_weight="0.50"
+                android:onClick="sdm"
+                android:layout_marginLeft="2dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Keunggulan"
+                android:id="@+id/button15"
+                android:textColor="#fff"
+                android:singleLine="true"
+                android:background="#F15A23"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
